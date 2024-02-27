@@ -1,2 +1,2 @@
 # clone-tabnews
-Projeto do https://curso.dev para refocar conhecimento, implementando o https://www.tabnews.com.br 
+O projeto do https://curso.dev visa aprimorar conhecimentos ao implementar o https://www.tabnews.com.br.
