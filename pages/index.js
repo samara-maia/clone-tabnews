@@ -1,4 +1,4 @@
 function Home () {
-    return <h1>"Obrigada por fazer parte da minha vida e por acreditar em mim!"</h1>
+    return <h1>"O segredo da evolução está em nunca temer a mudança, mas sim abraçá-la como a oportunidade mais valiosa para se tornar quem você realmente deseja ser."</h1>
 } 
 export default Home;

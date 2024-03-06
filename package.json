@@ -4,7 +4,9 @@
   "description": "O projeto do https://curso.dev visa aprimorar conhecimentos ao implementar o https://www.tabnews.com.br.",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "author": "",
   "license": "MIT",
