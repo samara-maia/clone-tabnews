@@ -7,9 +7,9 @@ async function query(queryObject) {
     user: process.env.POSTGRES_USER,
     database: process.env.POSTGRES_DB,
     password: process.env.POSTGRES_PASSWORD,
-    ssl: getSSLValues(),
+    ssl: process.env.NODE_ENV === "development" ? false : true,
   }); // comando sicrono
-  
+
   try {
     await client.connect(); // comando assicrono
     const result = await client.query(queryObject);
@@ -26,12 +26,12 @@ export default {
   query: query,
 };
 
-function getSSLValues() {
-  if (process.env.POSTGRES_CA) {
-    return {
-      ca: process.env.POSTGRES_CA,
-    };
-  }
-
-  return process.env.NODE_ENV === "production" ? true : false;
-}
+//function getSSLValues() {
+//  if (process.env.POSTGRES_CA) {
+//    return {
+//      ca: process.env.POSTGRES_CA,
+//    };
+//  }
+//
+//  return process.env.NODE_ENV === "production" ? true : false;
+//}
